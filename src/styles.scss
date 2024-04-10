@@ -1,1 +1,99 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    padding: 10px;
+}
+.container-list{
+    padding: 0;
+}
+
+.default{
+    background-color: aliceblue;
+}
+
+.claro{
+    background-color: aliceblue;
+    color: rgb(19, 47, 71);
+    .allheroescards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        .herocard{
+            width: 20rem;
+            min-height:30rem;
+            margin: 20px 0;
+            padding: 20px 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            box-shadow: inset rgb(164, 166, 168) 0 0 3px, rgb(51, 59, 67) 0 0 8px;
+            border-radius:10px;
+            .herodescription{
+                height:10rem;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    }
+}
+
+.oscuro{
+    background-color: rgb(9, 44, 75);
+    .allheroescards{
+        background-color: rgb(9, 44, 75);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        .herocard{
+            width: 20rem;
+            min-height:30rem;
+            background-color: rgb(9, 44, 75);
+            color: aliceblue;
+            margin: 20px 0;
+            padding: 20px 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            box-shadow: inset aliceblue 0 0 3px, aliceblue 0 0 8px;
+            border-radius:10px;
+            .herodescription{
+                height:10rem;
+                position:relative;
+            }
+        }
+    }
+}
+
+.cyberpunk{
+    background-color: rgb(80, 10, 113);
+    color: rgb(18, 31, 199);
+    .allheroescards{    
+        background-color: rgb(80, 10, 113);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        .herocard{
+            background-color: rgba(249, 163, 4, 0.854);
+            width: 20rem;
+            min-height:30rem;
+            margin: 20px 0;
+            padding: 20px 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            box-shadow: inset aliceblue 0 0 3px, rgb(10, 83, 229) 2px 2px 8px,rgb(203, 18, 249) -2px -2px 8px;
+            border-radius:10px;
+            .herodescription{
+                height:10rem;
+                position:relative;
+            }
+        }
+    }
+}

@@ -1,16 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Heroe } from 'src/app/interfaces/heroes.interface';
 import { PadreService } from 'src/app/services/padre.service';
 
 @Component({
-  selector: 'app-hijo3',
-  templateUrl: './hijo3.component.html',
-  styleUrls: ['./hijo3.component.scss']
+  selector: 'app-listado',
+  templateUrl: './listado.component.html',
+  styleUrls: ['./listado.component.scss']
 })
-export class Hijo3Component {
+export class ListadoComponent {
 
-  heroesList: Heroe[] = [];
-  backColor: string = 'cyberpunk'
+  @Input() heroesList: Heroe[] = [];
+  @Input() backColor: string = 'claro'
 
   constructor(private heroesService: PadreService){}
 

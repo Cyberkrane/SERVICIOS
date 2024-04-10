@@ -6,6 +6,7 @@ import { PadreComponent } from './padre/padre.component';
 import { HijoComponent } from './hijo/hijo.component';
 import { Hijo2Component } from './hijo2/hijo2.component';
 import { Hijo3Component } from './hijo3/hijo3.component';
+import { ListadoComponent } from '../components/listado/listado.component';
 
 
 @NgModule({
@@ -13,11 +14,12 @@ import { Hijo3Component } from './hijo3/hijo3.component';
     PadreComponent,
     HijoComponent,
     Hijo2Component,
-    Hijo3Component
+    Hijo3Component,
+    ListadoComponent
   ],
   imports: [
     CommonModule,
-    MasterRoutingModule
+    MasterRoutingModule,
   ]
 })
 export class MasterModule { }

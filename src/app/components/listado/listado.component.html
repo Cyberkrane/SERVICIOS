@@ -1,0 +1,24 @@
+
+<div class="container-list {{backColor}}">
+
+<div class="allheroescards" *ngIf="heroesList.length > 1 ; else noheroes">
+
+    <div class="herocard" *ngFor="let hero of heroesList">
+      <img src="{{hero.img}}" alt="">  
+      <div class="herodescription">
+          <h3>{{hero.nombre}}</h3>
+        <h4>Nombre: {{hero.alter_ego}}</h4>
+        <h5>Edad: {{hero.edad}}</h5>
+        <h5>Origen: {{hero.origen}}</h5>
+        <h5>Poder principal: {{hero.poder_principal}}</h5>  
+        </div>
+    </div>
+
+</div>
+
+<ng-template #noheroes>
+<h2>NO HEROES</h2>
+</ng-template>
+
+</div>
+

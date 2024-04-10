@@ -1,0 +1,15 @@
+.allheroescards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    .herocard{
+        width: 20rem;
+        background-color: aliceblue;
+        margin: 10px;
+        padding: 25px 10px;
+        border-radius: 10px;
+        box-shadow: inset rgb(146, 153, 158) 0 0 2px, rgb(94, 97, 100) 0 0 5px;
+    }
+}
